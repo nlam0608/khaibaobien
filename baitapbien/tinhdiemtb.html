@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>tinh diem trung binh </h1>
+<input type="text" id="toan">
+<input type="text" id="ly">
+<input type="text" id="hoa">
+<button type="button" onclick="diemtb()">ket qua</button>
+
+<script>
+    function diemtb (){
+        let toan = +document.getElementById("toan").value;
+        let ly = +document.getElementById("ly").value;
+        let hoa = +document.getElementById("hoa").value;
+        let ketqua = (toan+ly+hoa)/3
+        document.write(ketqua)
+
+    }
+</script>
+</body>
+</html>

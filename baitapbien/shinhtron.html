@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>tinh dien tich hinh tron</h1>
+nhap ban kinh (r)<input type="text" id="r">
+<button type="button" onclick="hinhtron()">tinh ket qua</button>
+<h2>tinh chu vi</h2>
+nhap duong kinh (d) <input type="text" id="d">
+<button type="button" onclick="chuVi()">tinh ket qua</button>
+<script>
+  function hinhtron(){
+    let bankinh = +document.getElementById('r').value;
+    let ketQua = bankinh**2*3.14;
+    document.write(ketQua)
+  }
+</script>
+<script>
+    function chuVi(){
+        let duongTron = parseInt(document.getElementById('d').value);
+        let result = duongTron*3.14;
+        document.write(result)
+    }
+</script>
+</body>
+</html>
