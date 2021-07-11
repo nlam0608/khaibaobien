@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>Caculator</h1>
+<input type="text" id="o1">
+<input type="text" id="o2"><br>
+<button onclick="cong()">cộng (+)</button>
+<button onclick="tru()">trừ  (-)</button>
+<button onclick="nhan()">nhan (*)</button>
+<button onclick="chia()">chia (/)</button>
+</body>
+<script>
+function cong(){
+  let a = +document.getElementById('o1').value;
+  let b = +document.getElementById('o2').value;
+  let ketqua = a+b
+  alert(ketqua)}
+  function tru(){
+    let a = +document.getElementById('o1').value;
+    let b = +document.getElementById('o2').value;
+    let ketqua = a-b
+    alert(ketqua)}
+    function nhan(){
+      let a = +document.getElementById('o1').value;
+      let b = +document.getElementById('o2').value;
+      let ketqua = a*b
+      alert(ketqua)}
+      function chia(){
+        let a = +document.getElementById('o1').value;
+        let b = +document.getElementById('o2').value;
+        let ketqua = a/b
+        alert(ketqua)}
+
+</script>
+</html>
